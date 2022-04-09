@@ -1,0 +1,4 @@
+import "pseudo_uniform.yeti"
+start() f64 {
+  pseudo_uniform()
+}

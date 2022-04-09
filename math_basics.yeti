@@ -1,0 +1,11 @@
+mod(P:i64, moduland: i64) {
+    while(P > moduland) {
+        P = P - moduland
+    }
+    P
+}
+
+
+start() {
+    mod(5, 3)
+}

@@ -1,4 +1,7 @@
 import "pseudo_uniform.yeti"
-start() f64 {
-  pseudo_uniform()
+start() {
+  oo = "https://github.com/boss-daddy/yeti_random.git"
+  x = eff()
+  o = x
+  o
 }

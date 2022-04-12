@@ -1,11 +1,6 @@
-mod(P:i64, moduland: i64) {
+mod(P:f64, moduland: f64) {
     while(P > moduland) {
         P = P - moduland
     }
     P
-}
-
-
-start() {
-    mod(5, 3)
 }

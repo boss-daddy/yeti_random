@@ -1,17 +1,13 @@
 struct PseudoComposition {
-  mult: f64
-  mod: i64
-  seed: f64
-  size: f64
+  multiplex: i64
+  modulant: i64
+  seed: i64
+  size: i64
 }
 
-pseudo_uniform() f64 {
-	psucomp = PseudoComposition(16807,12, 1, 1)
-	a = 100
-	a
-}
-
-eff() i64{
-	o = 5000
-	o
+start() f64 {
+  r = Rectangle(5, 4)
+  s = Square(5)
+  t = Triangle(base=5, height=4)
+  r.area
 }

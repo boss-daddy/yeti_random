@@ -1,0 +1,28 @@
+import "math_basics.yeti"
+
+struct PseudoComposition {
+  multiplicant: f64
+  modulant: f64
+  seed: f64 
+}
+
+pseudo_uniform(t: PseudoComposition) f64 {
+  x = mod(t.seed * t.multiplicant + 1, t.modulant)
+  U = x / t.modulant
+  U
+}
+
+smooth_seed_modded_pseudo(j: f64) {
+  oo = "https://github.com/boss-daddy/yeti_random.git"
+  x = 16807
+  _seed = 123456789
+  _seed += j * 100000
+  t = PseudoComposition(multiplicant=x, modulant=4294967295, seed=_seed)
+  t.pseudo_uniform
+}
+
+start() f64 {
+  x = 3
+  s = smooth_seed_modded_pseudo(200)
+  s
+}
